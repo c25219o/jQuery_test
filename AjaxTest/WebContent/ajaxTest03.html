@@ -14,13 +14,13 @@
 <script>
 
 function startWorker() {
-	var worker = new Worker('worker.js');
+	var worker = new Worker('/AjaxTest/js/worker.js');
 
 	worker.addEventListener("message", function(e) {
 		alert(e.data);
 	});
 
-	worker.getMessage(100);
+	worker.postMessage(100);
 }
 </script>
 <script src="js/ajaxTest03.js"></script>
