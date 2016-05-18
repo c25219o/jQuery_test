@@ -13,3 +13,16 @@ a {
 	line-height: 1.5;
 	text-decoration: none;
 }
+
+#alert {
+	color: #FF0000;
+}
+
+.focus {
+    background: #DDDDDD;
+}
+
+
+.invalid {
+    background: #FFCCCC
+}
