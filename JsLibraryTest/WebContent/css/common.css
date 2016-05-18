@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color: #F5CFFA;
+}
+
+h1 {
+	color: #333333;
+}
+
+a {
+	color: #444444;
+	line-height: 1.5;
+	text-decoration: none;
+}
