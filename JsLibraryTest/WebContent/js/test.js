@@ -9,10 +9,10 @@ $(function() {
 	$('#name').blur(function() {
 		if ($(this).val() == null || $(this).val() =="") {
 			$(this).addClass('invalid');
-			$('#alert').text('名前を入力してください');
+			$('#alert_name').text('名前を入力してください');
 		} else {
 			$(this).removeClass('invalid');
-			$('#alert').text(empty);
+			$('#alert_name').text(empty);
 		}
 	});
 });
@@ -29,12 +29,12 @@ $(function() {
 $(function() {
 
 	$('#message').blur(function() {
-		if($(this).length > 10) {
+		if($(this).val().length > 10) {
 			$(this).addClass('invalid');
-			$('#alert').text('メッセージは10文字以内にしてください');
+			$('#alert_message').text('メッセージは10文字以内にしてください');
 		} else {
 			$(this).removeClass('invalid');
-			$('#alert').text(empty);
+			$('#alert_message').text(empty);
 		}
 	})
 });
