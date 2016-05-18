@@ -17,7 +17,6 @@ $(function() {
 	});
 });
 
-
 $(function() {
 
 	$('input[type=text]').focus(function() {
@@ -25,4 +24,17 @@ $(function() {
 	}).blur(function(){
 		$(this).removeClass('focus');
 	});
+});
+
+$(function() {
+
+	$('#message').blur(function() {
+		if($(this).length > 10) {
+			$(this).addClass('invalid');
+			$('#alert').text('メッセージは10文字以内にしてください');
+		} else {
+			$(this).removeClass('invalid');
+			$('#alert').text(empty);
+		}
+	})
 });
