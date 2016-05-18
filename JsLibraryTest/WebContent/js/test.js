@@ -7,7 +7,7 @@ const empty = '';
 $(function() {
 
 	$('#name').blur(function() {
-		if ($(this).val() == null || $(this).val() =="") {
+		if ($(this).val() == null || $(this).val() =='') {
 			$(this).addClass('invalid');
 			$('#alert_name').text('名前を入力してください');
 		} else {
